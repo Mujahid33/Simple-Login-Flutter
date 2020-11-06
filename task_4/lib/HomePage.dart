@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'LoginPage.dart';
 
+// ignore: must_be_immutable
 class HomePage extends StatelessWidget {
   String username, password;
   HomePage({this.username, this.password});

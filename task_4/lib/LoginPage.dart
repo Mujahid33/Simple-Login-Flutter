@@ -7,9 +7,6 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  final GlobalKey<ScaffoldState> _key = GlobalKey<ScaffoldState>();
-  // var _formKey = GlobalKey<FormState>();
-
   bool _isHidePassword = true;
 
   TextEditingController usernameController = TextEditingController();
@@ -53,12 +50,6 @@ class _LoginPageState extends State<LoginPage> {
                       )
                   ),
                   controller: usernameController,
-                  // validator: (value) {
-                  //   if(value.isEmpty){
-                  //     errorMsg = 'Username tidak boleh kosong';
-                  //   }
-                  //   return null;
-                  // },
                 ),
               ),
               SizedBox(height: 10,),
@@ -156,8 +147,6 @@ class _LoginPageState extends State<LoginPage> {
                         }
                       }
                     }
-
-
                   },
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
